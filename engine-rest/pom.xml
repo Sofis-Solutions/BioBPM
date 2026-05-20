@@ -2,10 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.camunda.bpm</groupId>
+    <groupId>com.sofis.biobpm</groupId>
     <artifactId>camunda-database-settings</artifactId>
     <relativePath>../database</relativePath>
-    <version>7.24.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>camunda-engine-rest-root</artifactId>
@@ -13,9 +13,8 @@
   <packaging>pom</packaging>
 
   <description>
-    Note: 7.24.0 is the last community edition release published on Maven Central. This library will not receive any new versions or releases. However, if you are interested in extended maintenance you could look into our enterprise edition. Get in touch with us: https://camunda.com/contact/
   </description>
-  <name>Camunda Platform - engine - REST - Root</name>
+  <name>BioBPM - engine - REST - Root</name>
 
   <properties>
     <version.rest-assured>4.5.0</version.rest-assured>
@@ -37,7 +36,7 @@
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.camunda.bpm</groupId>
+        <groupId>com.sofis.biobpm</groupId>
         <artifactId>camunda-core-internal-dependencies</artifactId>
         <version>${project.version}</version>
         <scope>import</scope>

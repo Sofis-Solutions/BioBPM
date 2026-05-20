@@ -4,32 +4,31 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.camunda.bpm.springboot.project</groupId>
+    <groupId>com.sofis.biobpm.springboot.project</groupId>
     <artifactId>camunda-bpm-spring-boot-starter-qa</artifactId>
-    <version>7.24.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <packaging>pom</packaging>
 
   <description>
-    Note: 7.24.0 is the last community edition release published on Maven Central. This library will not receive any new versions or releases. However, if you are interested in extended maintenance you could look into our enterprise edition. Get in touch with us: https://camunda.com/contact/
   </description>
 
   <artifactId>qa-plugins</artifactId>
-  <name>Camunda Platform - Spring Boot Starter - QA - Plugins</name>
+  <name>BioBPM - Spring Boot Starter - QA - Plugins</name>
 
   <dependencyManagement>
 
     <dependencies>
 
       <dependency>
-        <groupId>org.camunda.bpm.springboot</groupId>
+        <groupId>com.sofis.biobpm.springboot</groupId>
         <artifactId>camunda-bpm-spring-boot-starter</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.camunda.bpm.springboot</groupId>
+        <groupId>com.sofis.biobpm.springboot</groupId>
         <artifactId>camunda-bpm-spring-boot-starter-test</artifactId>
         <version>${project.version}</version>
       </dependency>

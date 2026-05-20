@@ -3,24 +3,23 @@
   <modelVersion>4.0.0</modelVersion>
 
   <description>
-    Note: 7.24.0 is the last community edition release published on Maven Central. This library will not receive any new versions or releases. However, if you are interested in extended maintenance you could look into our enterprise edition. Get in touch with us: https://camunda.com/contact/
   </description>
 
   <parent>
-    <groupId>org.camunda.bpm.dmn</groupId>
+    <groupId>com.sofis.biobpm.dmn</groupId>
     <artifactId>camunda-engine-dmn-root</artifactId>
-    <version>7.24.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>camunda-engine-feel-juel</artifactId>
   <name>camunda DMN - engine FEEL - JUEL</name>
 
   <properties>
-    <camunda.artifact>org.camunda.bpm.dmn.feel.impl.juel</camunda.artifact>
+    <camunda.artifact>com.sofis.biobpm.dmn.feel.impl.juel</camunda.artifact>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>org.camunda.bpm.dmn</groupId>
+      <groupId>com.sofis.biobpm.dmn</groupId>
       <artifactId>camunda-engine-feel-api</artifactId>
     </dependency>
 
@@ -35,7 +34,7 @@
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm.juel</groupId>
+      <groupId>com.sofis.biobpm.juel</groupId>
       <artifactId>camunda-juel</artifactId>
     </dependency>
 

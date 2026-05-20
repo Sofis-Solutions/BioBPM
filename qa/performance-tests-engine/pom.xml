@@ -4,14 +4,13 @@
   <packaging>jar</packaging>
 
   <description>
-    Note: 7.24.0 is the last community edition release published on Maven Central. This library will not receive any new versions or releases. However, if you are interested in extended maintenance you could look into our enterprise edition. Get in touch with us: https://camunda.com/contact/
   </description>
-  <name>Camunda Platform - QA Performance Tests Engine</name>
+  <name>BioBPM - QA Performance Tests Engine</name>
 
   <parent>
-    <groupId>org.camunda.bpm.qa</groupId>
+    <groupId>com.sofis.biobpm.qa</groupId>
     <artifactId>camunda-qa</artifactId>
-    <version>7.24.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <properties>
@@ -24,7 +23,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
+      <groupId>com.sofis.biobpm</groupId>
       <artifactId>camunda-engine</artifactId>
     </dependency>
     <dependency>
@@ -152,7 +151,7 @@
                         <include name="**/*.png" />
                       </fileset>
                     </copy>
-                    <java classname="org.camunda.bpm.qa.performance.engine.benchmark.BenchmarkReport" classpathref="maven.test.classpath" />
+                    <java classname="com.sofis.biobpm.qa.performance.engine.benchmark.BenchmarkReport" classpathref="maven.test.classpath" />
                   </tasks>
                 </configuration>
               </execution>
@@ -223,7 +222,7 @@
                         <include name="**/*.png" />
                       </fileset>
                     </copy>
-                    <java classname="org.camunda.bpm.qa.performance.engine.benchmark.BenchmarkReport" classpathref="maven.test.classpath" />
+                    <java classname="com.sofis.biobpm.qa.performance.engine.benchmark.BenchmarkReport" classpathref="maven.test.classpath" />
                   </tasks>
                 </configuration>
               </execution>
@@ -243,8 +242,8 @@
       <properties>
         <numberOfThreads>1</numberOfThreads>
         <numberOfRuns>1</numberOfRuns>
-        <testWatchers>org.camunda.bpm.qa.performance.engine.sqlstatementlog.StatementLogPerfTestWatcher</testWatchers>
-        <processEnginePlugins>org.camunda.bpm.qa.performance.engine.sqlstatementlog.StatementLogProcessEnginePlugin</processEnginePlugins>
+        <testWatchers>com.sofis.biobpm.qa.performance.engine.sqlstatementlog.StatementLogPerfTestWatcher</testWatchers>
+        <processEnginePlugins>com.sofis.biobpm.qa.performance.engine.sqlstatementlog.StatementLogProcessEnginePlugin</processEnginePlugins>
         <watchActivities />
         <test.excludes>query</test.excludes>
       </properties>
@@ -291,7 +290,7 @@
                         <include name="**/*.png" />
                       </fileset>
                     </copy>
-                    <java classname="org.camunda.bpm.qa.performance.engine.sqlstatementlog.SqlStatementLogReport" classpathref="maven.test.classpath" />
+                    <java classname="com.sofis.biobpm.qa.performance.engine.sqlstatementlog.SqlStatementLogReport" classpathref="maven.test.classpath" />
                   </tasks>
                 </configuration>
               </execution>
@@ -337,7 +336,7 @@
                 <configuration>
                   <tasks>
                     <echo message="Generating load" />
-                    <java classname="org.camunda.bpm.qa.performance.engine.query.DefaultLoadGenerator" classpathref="maven.test.classpath" failonerror="true" />
+                    <java classname="com.sofis.biobpm.qa.performance.engine.query.DefaultLoadGenerator" classpathref="maven.test.classpath" failonerror="true" />
                   </tasks>
                 </configuration>
               </execution>
@@ -361,8 +360,8 @@
       <properties>
         <numberOfThreads>1</numberOfThreads>
         <numberOfRuns>1</numberOfRuns>
-        <testWatchers>org.camunda.bpm.qa.performance.engine.sqlstatementlog.StatementLogPerfTestWatcher</testWatchers>
-        <processEnginePlugins>org.camunda.bpm.qa.performance.engine.sqlstatementlog.StatementLogProcessEnginePlugin</processEnginePlugins>
+        <testWatchers>com.sofis.biobpm.qa.performance.engine.sqlstatementlog.StatementLogPerfTestWatcher</testWatchers>
+        <processEnginePlugins>com.sofis.biobpm.qa.performance.engine.sqlstatementlog.StatementLogProcessEnginePlugin</processEnginePlugins>
         <watchActivities />
         <test.includes>query</test.includes>
         <skip.tests>false</skip.tests>
@@ -410,7 +409,7 @@
                         <include name="**/*.png" />
                       </fileset>
                     </copy>
-                    <java classname="org.camunda.bpm.qa.performance.engine.sqlstatementlog.SqlStatementLogReport" classpathref="maven.test.classpath" />
+                    <java classname="com.sofis.biobpm.qa.performance.engine.sqlstatementlog.SqlStatementLogReport" classpathref="maven.test.classpath" />
                   </tasks>
                 </configuration>
               </execution>
@@ -478,7 +477,7 @@
                         <include name="**/*.png" />
                       </fileset>
                     </copy>
-                    <java classname="org.camunda.bpm.qa.performance.engine.framework.activitylog.ActivityCountReporter" classpathref="maven.test.classpath" />
+                    <java classname="com.sofis.biobpm.qa.performance.engine.framework.activitylog.ActivityCountReporter" classpathref="maven.test.classpath" />
                   </tasks>
                 </configuration>
               </execution>

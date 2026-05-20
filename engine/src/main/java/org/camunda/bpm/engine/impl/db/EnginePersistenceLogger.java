@@ -493,7 +493,7 @@ public class EnginePersistenceLogger extends ProcessEngineLogger {
   public WrongDbException wrongDbVersionException(String version, String dbVersion) {
     return new WrongDbException(exceptionMessage(
       "055",
-      "Version mismatch: Camunda library version is '{}' and db version is '{}'. " +
+      "Version mismatch: BioBPM library version is '{}' and db version is '{}'. " +
       HINT_TEXT,
       version,
       dbVersion
@@ -511,7 +511,7 @@ public class EnginePersistenceLogger extends ProcessEngineLogger {
   public ProcessEngineException missingActivitiTablesException() {
     return new ProcessEngineException(exceptionMessage(
       "057",
-      "There are no Camunda tables in the database. " +
+      "There are no BioBPM tables in the database. " +
         HINT_TEXT
     ));
   }

@@ -53,7 +53,7 @@ public class DbMetricsReporter {
   }
 
   public void start() {
-    timer = new Timer("Camunda Metrics Reporter", true);
+    timer = new Timer("BioBPM Metrics Reporter", true);
     long reportingIntervalInMillis = reportingIntervalInSeconds * 1000;
 
     timer.scheduleAtFixedRate(metricsCollectionTask,

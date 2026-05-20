@@ -4,16 +4,15 @@
   <packaging>jar</packaging>
 
   <description>
-    Note: 7.24.0 is the last community edition release published on Maven Central. This library will not receive any new versions or releases. However, if you are interested in extended maintenance you could look into our enterprise edition. Get in touch with us: https://camunda.com/contact/
   </description>
   
-  <name>Camunda Platform - JUnit 5 Extension</name>
+  <name>BioBPM - JUnit 5 Extension</name>
   
   <parent>
-    <groupId>org.camunda.bpm</groupId>
+    <groupId>com.sofis.biobpm</groupId>
     <artifactId>camunda-database-settings</artifactId>
     <relativePath>../../database</relativePath>
-    <version>7.24.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <properties>
@@ -23,7 +22,7 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.camunda.bpm</groupId>
+        <groupId>com.sofis.biobpm</groupId>
         <artifactId>camunda-core-internal-dependencies</artifactId>
         <version>${project.version}</version>
         <scope>import</scope>
@@ -57,12 +56,12 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
+      <groupId>com.sofis.biobpm</groupId>
       <artifactId>camunda-engine</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.camunda.bpm.dmn</groupId>
+      <groupId>com.sofis.biobpm.dmn</groupId>
       <artifactId>camunda-dmn-junit5</artifactId>
       <version>${project.version}</version>
     </dependency>

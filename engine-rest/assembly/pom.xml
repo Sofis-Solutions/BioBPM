@@ -1,18 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>camunda-engine-rest</artifactId>
-  <name>Camunda Platform - engine - REST - Assembly</name>
+  <name>BioBPM - engine - REST - Assembly</name>
   <packaging>war</packaging>
 
   <description>
-    Note: 7.24.0 is the last community edition release published on Maven Central. This library will not receive any new versions or releases. However, if you are interested in extended maintenance you could look into our enterprise edition. Get in touch with us: https://camunda.com/contact/
   </description>
 
   <parent>
-    <groupId>org.camunda.bpm</groupId>
+    <groupId>com.sofis.biobpm</groupId>
     <artifactId>camunda-engine-rest-root</artifactId>
     <relativePath>../</relativePath>
-    <version>7.24.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
   
   <properties>
@@ -26,14 +25,14 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
+      <groupId>com.sofis.biobpm</groupId>
       <artifactId>camunda-engine-rest-core</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <!-- dependencies only used for assemblies should be scope provided -->
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
+      <groupId>com.sofis.biobpm</groupId>
       <artifactId>camunda-engine-rest-core</artifactId>
       <version>${project.version}</version>
       <classifier>sources</classifier>
@@ -41,7 +40,7 @@
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
+      <groupId>com.sofis.biobpm</groupId>
       <artifactId>camunda-engine-rest-core</artifactId>
       <version>${project.version}</version>
       <classifier>tests</classifier>
@@ -86,7 +85,7 @@
               <archive>
                 <manifestEntries>
                   <!-- module dependencies for deployment on wildfly  -->
-                  <Dependencies>org.camunda.bpm.camunda-engine,org.camunda.bpm.dmn.camunda-engine-dmn,org.camunda.commons.camunda-commons-logging,org.camunda.spin.camunda-spin-core,org.camunda.bpm.juel.camunda-juel services,org.graalvm.js.js-scriptengine services</Dependencies>
+                  <Dependencies>com.sofis.biobpm.camunda-engine,com.sofis.biobpm.dmn.camunda-engine-dmn,org.camunda.commons.camunda-commons-logging,org.camunda.spin.camunda-spin-core,com.sofis.biobpm.juel.camunda-juel services,org.graalvm.js.js-scriptengine services</Dependencies>
                 </manifestEntries>
               </archive>
               <descriptors>

@@ -3,24 +3,23 @@
   <modelVersion>4.0.0</modelVersion>
 
   <description>
-    Note: 7.24.0 is the last community edition release published on Maven Central. This library will not receive any new versions or releases. However, if you are interested in extended maintenance you could look into our enterprise edition. Get in touch with us: https://camunda.com/contact/
   </description>
 
-  <name>Camunda Platform - engine</name>
+  <name>BioBPM - engine</name>
   <artifactId>camunda-engine</artifactId>
 
   <parent>
-    <groupId>org.camunda.bpm</groupId>
+    <groupId>com.sofis.biobpm</groupId>
     <artifactId>camunda-database-settings</artifactId>
     <relativePath>../database</relativePath>
-    <version>7.24.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <dependencyManagement>
     <dependencies>
 
       <dependency>
-        <groupId>org.camunda.bpm</groupId>
+        <groupId>com.sofis.biobpm</groupId>
         <artifactId>camunda-core-internal-dependencies</artifactId>
         <version>${project.version}</version>
         <scope>import</scope>
@@ -51,22 +50,22 @@
     <!-- camunda dependencies -->
 
     <dependency>
-      <groupId>org.camunda.bpm.model</groupId>
+      <groupId>com.sofis.biobpm.model</groupId>
       <artifactId>camunda-bpmn-model</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm.model</groupId>
+      <groupId>com.sofis.biobpm.model</groupId>
       <artifactId>camunda-cmmn-model</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm.juel</groupId>
+      <groupId>com.sofis.biobpm.juel</groupId>
       <artifactId>camunda-juel</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm.dmn</groupId>
+      <groupId>com.sofis.biobpm.dmn</groupId>
       <artifactId>camunda-engine-dmn</artifactId>
       <exclusions>
         <!-- these exclusions are needed when building with Maven >= 3.3
@@ -258,7 +257,7 @@
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
+      <groupId>com.sofis.biobpm</groupId>
       <artifactId>camunda-test-utils-testcontainers</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
@@ -338,7 +337,7 @@
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
+      <groupId>com.sofis.biobpm</groupId>
       <artifactId>camunda-bpm-archunit</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
@@ -367,7 +366,7 @@
     <skip-third-party-bom>false</skip-third-party-bom>
 
     <camunda.artifact>
-      org.camunda.bpm
+      com.sofis.biobpm
     </camunda.artifact>
     <camunda.osgi.export.pkg>
       !${camunda.artifact}.engine.variable.*,
@@ -444,7 +443,7 @@
             <exclude>%regex[.*(${test.excludes}).*Test.*.class]</exclude>
           </excludes>
           <dependenciesToScan>
-            <dependency>org.camunda.bpm:camunda-bpm-archunit</dependency>
+            <dependency>com.sofis.biobpm:camunda-bpm-archunit</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -488,9 +487,9 @@
           <keepDependenciesWithProvidedScope>true</keepDependenciesWithProvidedScope>
           <artifactSet>
             <excludes>
-              <exclude>org.camunda.bpm.model:*</exclude>
-              <exclude>org.camunda.bpm.dmn:*</exclude>
-              <exclude>org.camunda.bpm.juel:*</exclude>
+              <exclude>com.sofis.biobpm.model:*</exclude>
+              <exclude>com.sofis.biobpm.dmn:*</exclude>
+              <exclude>com.sofis.biobpm.juel:*</exclude>
               <exclude>org.camunda.commons:*</exclude>
               <exclude>org.camunda.feel:*</exclude>
 
@@ -626,7 +625,7 @@
               </execution>
             </executions>
             <configuration>
-              <mainClass>org.camunda.bpm.engine.impl.db.DbSchemaDrop</mainClass>
+              <mainClass>com.sofis.biobpm.engine.impl.db.DbSchemaDrop</mainClass>
               <classpathScope>test</classpathScope>
               <cleanupDaemonThreads>false</cleanupDaemonThreads>
             </configuration>
@@ -767,7 +766,7 @@
       <id>check-plugins</id>
       <dependencies>
         <dependency>
-          <groupId>org.camunda.bpm</groupId>
+          <groupId>com.sofis.biobpm</groupId>
           <artifactId>camunda-engine-plugin-spin</artifactId>
         </dependency>
         <dependency>
@@ -775,7 +774,7 @@
           <artifactId>camunda-spin-dataformat-all</artifactId>
         </dependency>
         <dependency>
-          <groupId>org.camunda.bpm</groupId>
+          <groupId>com.sofis.biobpm</groupId>
           <artifactId>camunda-engine-plugin-connect</artifactId>
         </dependency>
         <dependency>

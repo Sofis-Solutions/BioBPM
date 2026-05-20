@@ -2,23 +2,22 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.camunda.bpm.qa.upgrade</groupId>
+    <groupId>com.sofis.biobpm.qa.upgrade</groupId>
     <artifactId>camunda-qa-db-instance-migration</artifactId>
-    <version>7.24.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>camunda-qa-upgrade-test-migration</artifactId>
   <packaging>jar</packaging>
 
   <description>
-    Note: 7.24.0 is the last community edition release published on Maven Central. This library will not receive any new versions or releases. However, if you are interested in extended maintenance you could look into our enterprise edition. Get in touch with us: https://camunda.com/contact/
   </description>
-  <name>Camunda Platform - QA - upgrade - instance migration - test</name>
+  <name>BioBPM - QA - upgrade - instance migration - test</name>
 
   <dependencies>
 
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
+      <groupId>com.sofis.biobpm</groupId>
       <artifactId>camunda-engine</artifactId>
     </dependency>
 
@@ -27,12 +26,12 @@
       <artifactId>camunda-spin-dataformat-json-jackson</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
+      <groupId>com.sofis.biobpm</groupId>
       <artifactId>camunda-engine-plugin-spin</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm.qa.upgrade</groupId>
+      <groupId>com.sofis.biobpm.qa.upgrade</groupId>
       <artifactId>camunda-qa-upgrade-scenario-util</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -122,7 +121,7 @@
                 <configuration>
                   <artifactItems>
                     <artifactItem>
-                      <groupId>org.camunda.bpm.distro</groupId>
+                      <groupId>com.sofis.biobpm.distro</groupId>
                       <artifactId>camunda-sql-scripts</artifactId>
                       <version>${project.version}</version>
                       <type>test-jar</type>
@@ -185,7 +184,7 @@
                 <configuration>
                   <artifactItems>
                     <artifactItem>
-                      <groupId>org.camunda.bpm.distro</groupId>
+                      <groupId>com.sofis.biobpm.distro</groupId>
                       <artifactId>camunda-sql-scripts</artifactId>
                       <version>${project.version}</version>
                       <type>test-jar</type>

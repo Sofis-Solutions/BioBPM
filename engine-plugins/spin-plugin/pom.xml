@@ -3,17 +3,16 @@
 
   <parent>
     <artifactId>camunda-engine-plugins</artifactId>
-    <groupId>org.camunda.bpm</groupId>
-    <version>7.24.0-SNAPSHOT</version>
+    <groupId>com.sofis.biobpm</groupId>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
   <description>
-    Note: 7.24.0 is the last community edition release published on Maven Central. This library will not receive any new versions or releases. However, if you are interested in extended maintenance you could look into our enterprise edition. Get in touch with us: https://camunda.com/contact/
   </description>
 
   <artifactId>camunda-engine-plugin-spin</artifactId>
-  <name>Camunda Platform - engine plugins - spin</name>
+  <name>BioBPM - engine plugins - spin</name>
 
   <dependencies>
 
@@ -23,13 +22,13 @@
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm.dmn</groupId>
+      <groupId>com.sofis.biobpm.dmn</groupId>
       <artifactId>camunda-engine-feel-scala</artifactId>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
+      <groupId>com.sofis.biobpm</groupId>
       <artifactId>camunda-engine</artifactId>
       <classifier>tests</classifier>
       <scope>test</scope>
@@ -91,7 +90,7 @@
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm.model</groupId>
+      <groupId>com.sofis.biobpm.model</groupId>
       <artifactId>camunda-bpmn-model</artifactId>
       <scope>test</scope>
     </dependency>
