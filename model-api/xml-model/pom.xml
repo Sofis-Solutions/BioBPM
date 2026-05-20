@@ -17,7 +17,7 @@
   <name>BioBPM - Xml Model API</name>
   <inceptionYear>2014</inceptionYear>
   <properties>
-    <camunda.artifact>com.sofis.biobpm.model.xml</camunda.artifact>
+    <camunda.artifact>org.camunda.bpm.model.xml</camunda.artifact>
     <camunda.osgi.import.additional>
       org.assertj.*;resolution:=optional,
       org.junit.*;resolution:=optional

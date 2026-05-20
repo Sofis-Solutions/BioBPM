@@ -215,7 +215,7 @@
                 </goals>
                 <phase>process-test-classes</phase>
                 <configuration>
-                  <mainClass>com.sofis.biobpm.qa.rolling.update.TestNewEngineMain</mainClass>
+                  <mainClass>org.camunda.bpm.qa.rolling.update.TestNewEngineMain</mainClass>
                   <includePluginDependencies>false</includePluginDependencies>
                 </configuration>
               </execution>

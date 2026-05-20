@@ -9,13 +9,14 @@
   <inceptionYear>2013</inceptionYear>
 
   <description>
-    BioBPM is a fork of BioBPM 7 Community Edition, maintained by Sofis Solutions.
+    BioBPM is a fork of Camunda Platform 7 Community Edition, maintained by Sofis Solutions.
     It provides a BPMN process engine and REST API for integration into Sofis products.
     Original project: https://github.com/camunda/camunda-bpm-platform (Apache License 2.0)
   </description>
 
   <properties>
     <license.includeTransitiveDependencies>false</license.includeTransitiveDependencies>
+    <maven.compiler.release>17</maven.compiler.release>
 
     <!-- These properties are used in both the BOM as well as the parent and subprojects -->
     <version.mybatis>3.5.15</version.mybatis>
@@ -26,6 +27,14 @@
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <release>17</release>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>license-maven-plugin</artifactId>

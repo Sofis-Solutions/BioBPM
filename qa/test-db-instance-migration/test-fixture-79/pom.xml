@@ -227,7 +227,7 @@
                 </goals>
                 <phase>process-test-classes</phase>
                 <configuration>
-                  <mainClass>com.sofis.biobpm.qa.upgrade.TestFixture</mainClass>
+                  <mainClass>org.camunda.bpm.qa.upgrade.TestFixture</mainClass>
                 </configuration>
               </execution>
             </executions>

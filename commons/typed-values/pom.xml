@@ -28,7 +28,7 @@
     </dependencies>
   </dependencyManagement>
   <properties>
-    <camunda.artifact>com.sofis.biobpm.engine.variable</camunda.artifact>
+    <camunda.artifact>org.camunda.bpm.engine.variable</camunda.artifact>
     <camunda.osgi.import.additional>
       !javax.activation
     </camunda.osgi.import.additional>

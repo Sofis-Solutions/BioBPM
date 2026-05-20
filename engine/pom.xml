@@ -366,7 +366,7 @@
     <skip-third-party-bom>false</skip-third-party-bom>
 
     <camunda.artifact>
-      com.sofis.biobpm
+      org.camunda.bpm
     </camunda.artifact>
     <camunda.osgi.export.pkg>
       !${camunda.artifact}.engine.variable.*,
@@ -625,7 +625,7 @@
               </execution>
             </executions>
             <configuration>
-              <mainClass>com.sofis.biobpm.engine.impl.db.DbSchemaDrop</mainClass>
+              <mainClass>org.camunda.bpm.engine.impl.db.DbSchemaDrop</mainClass>
               <classpathScope>test</classpathScope>
               <cleanupDaemonThreads>false</cleanupDaemonThreads>
             </configuration>

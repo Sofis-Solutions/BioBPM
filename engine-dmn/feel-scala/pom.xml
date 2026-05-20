@@ -13,7 +13,7 @@
   <artifactId>camunda-engine-feel-scala</artifactId>
   <name>camunda DMN - engine FEEL - SCALA</name>
   <properties>
-    <camunda.artifact>com.sofis.biobpm.dmn.feel.impl.scala</camunda.artifact>
+    <camunda.artifact>org.camunda.bpm.dmn.feel.impl.scala</camunda.artifact>
   </properties>
   <dependencies>
 

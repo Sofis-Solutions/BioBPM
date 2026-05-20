@@ -17,9 +17,9 @@
   <name>BioBPM - BPMN Model API</name>
   <inceptionYear>2014</inceptionYear>
   <properties>
-    <camunda.artifact>com.sofis.biobpm.model.bpmn</camunda.artifact>
+    <camunda.artifact>org.camunda.bpm.model.bpmn</camunda.artifact>
     <camunda.osgi.export>
-      !com.sofis.biobpm.model.bpmn.schema,
+      !org.camunda.bpm.model.bpmn.schema,
       ${camunda.osgi.export.pkg};${camunda.osgi.version};-noimport:=true
     </camunda.osgi.export>
   </properties>

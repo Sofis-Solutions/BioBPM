@@ -15,7 +15,7 @@
   <name>camunda DMN - engine FEEL - JUEL</name>
 
   <properties>
-    <camunda.artifact>com.sofis.biobpm.dmn.feel.impl.juel</camunda.artifact>
+    <camunda.artifact>org.camunda.bpm.dmn.feel.impl.juel</camunda.artifact>
   </properties>
   <dependencies>
     <dependency>

@@ -71,7 +71,7 @@
               <relocations>
                 <relocation>
                   <pattern>jakarta.el</pattern>
-                  <shadedPattern>com.sofis.biobpm.impl.juel.jakarta.el</shadedPattern>
+                  <shadedPattern>org.camunda.bpm.impl.juel.jakarta.el</shadedPattern>
                 </relocation>
               </relocations>
             </configuration>
