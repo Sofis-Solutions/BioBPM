@@ -28,6 +28,7 @@ jobs:
           mvn install -f commons/bom/pom.xml -q
           mvn install -f connect/bom/pom.xml -q
           mvn install -f engine-dmn/bom/pom.xml -q
+          mvn install -f bom/pom.xml -N -q
           mvn install -f bom/camunda-only-bom/pom.xml -q
           mvn install -f bom/camunda-bom/pom.xml -q
           mvn install -f parent/pom.xml -N -q
@@ -62,6 +63,7 @@ jobs:
           mvn install -f commons/bom/pom.xml -q
           mvn install -f connect/bom/pom.xml -q
           mvn install -f engine-dmn/bom/pom.xml -q
+          mvn install -f bom/pom.xml -N -q
           mvn install -f bom/camunda-only-bom/pom.xml -q
           mvn install -f bom/camunda-bom/pom.xml -q
           mvn install -f parent/pom.xml -N -q
