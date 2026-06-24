@@ -1,0 +1,52 @@
+name: BioBPM Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    name: Build & Publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+          server-id: github
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
+
+      - name: Bootstrap BOMs
+        run: |
+          mvn install -N -q
+          mvn install -f spin/bom/pom.xml -q
+          mvn install -f commons/bom/pom.xml -q
+          mvn install -f connect/bom/pom.xml -q
+          mvn install -f engine-dmn/bom/pom.xml -q
+          mvn install -f bom/camunda-only-bom/pom.xml -q
+          mvn install -f bom/camunda-bom/pom.xml -q
+          mvn install -f parent/pom.xml -N -q
+          mvn install -f internal-dependencies/pom.xml -N -q
+
+      - name: Deploy to GitHub Packages
+        run: mvn deploy -DskipTests -q
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: |
+            distro/sql-script/target/*.zip
