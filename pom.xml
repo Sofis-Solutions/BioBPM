@@ -58,8 +58,6 @@
       <modules>
         <module>spring-boot-starter</module>
 
-        <module>qa</module>
-
         <module>model-api</module>
         <module>engine-dmn</module>
         <module>connect</module>
