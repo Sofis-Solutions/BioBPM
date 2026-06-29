@@ -1,6 +1,8 @@
 package com.sofis.biobpm.run;
 
 import com.sofis.biobpm.run.property.BioBpmRunProperties;
+import org.camunda.connect.plugin.impl.ConnectProcessEnginePlugin;
+import org.camunda.spin.plugin.impl.SpinProcessEnginePlugin;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -13,6 +15,16 @@ import org.springframework.web.filter.CorsFilter;
 @Configuration
 @EnableConfigurationProperties(BioBpmRunProperties.class)
 public class BioBpmRunConfiguration {
+
+  @Bean
+  public ConnectProcessEnginePlugin connectPlugin() {
+    return new ConnectProcessEnginePlugin();
+  }
+
+  @Bean
+  public SpinProcessEnginePlugin spinPlugin() {
+    return new SpinProcessEnginePlugin();
+  }
 
   @Bean
   public FilterRegistrationBean<CorsFilter> corsFilter(BioBpmRunProperties props) {

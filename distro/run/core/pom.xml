@@ -49,6 +49,30 @@
       <scope>runtime</scope>
     </dependency>
 
+    <dependency>
+      <groupId>com.sofis.biobpm</groupId>
+      <artifactId>camunda-engine-plugin-connect</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.camunda.connect</groupId>
+      <artifactId>camunda-connect-http-client</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.camunda.connect</groupId>
+      <artifactId>camunda-connect-soap-http-client</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.sofis.biobpm</groupId>
+      <artifactId>camunda-engine-plugin-spin</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
     <!-- PostgreSQL driver (optional at runtime, activated when configured) -->
     <dependency>
       <groupId>org.postgresql</groupId>
@@ -67,6 +91,7 @@
         <configuration>
           <finalName>biobpm-run</finalName>
           <mainClass>com.sofis.biobpm.run.BioBpmRun</mainClass>
+          <layout>ZIP</layout>
         </configuration>
         <executions>
           <execution>
