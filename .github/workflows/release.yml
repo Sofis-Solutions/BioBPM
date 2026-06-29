@@ -51,3 +51,4 @@ jobs:
           generate_release_notes: true
           files: |
             distro/sql-script/target/*.zip
+            distro/run/core/target/biobpm-run.jar

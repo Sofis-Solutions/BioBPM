@@ -81,6 +81,7 @@
 
         <module>distro/license-book</module>
         <module>distro/sql-script</module>
+        <module>distro/run</module>
 
         <module>internal-dependencies</module>
         <module>database</module>

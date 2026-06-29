@@ -1,0 +1,49 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    # H2 in-memory (development/demo). Replace with a real DB for production.
+    url: jdbc:h2:mem:biobpm;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  # PostgreSQL example:
+  # datasource:
+  #   url: jdbc:postgresql://localhost:5432/biobpm
+  #   driver-class-name: org.postgresql.Driver
+  #   username: biobpm
+  #   password: secret
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+camunda:
+  bpm:
+    # Create an admin user on first startup
+    admin-user:
+      id: admin
+      password: admin
+      firstName: Admin
+
+    # Automatically deploy BPMN/DMN/CMMN files from the classpath
+    auto-deployment-enabled: true
+
+    # History level: none, activity, audit, full
+    history-level: audit
+
+    database:
+      # Set to true only on first run to auto-create tables; then set false or use sql scripts
+      schema-update: true
+
+biobpm:
+  run:
+    cors:
+      # Set to true and configure origins to allow cross-origin REST requests
+      enabled: false
+      # allowed-origins:
+      #   - "https://myapp.example.com"
+      # allow-credentials: false
