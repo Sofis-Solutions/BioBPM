@@ -130,7 +130,7 @@ mvn validate
 <dependency>
   <groupId>lat.sofis.biobpm</groupId>
   <artifactId>camunda-engine</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 

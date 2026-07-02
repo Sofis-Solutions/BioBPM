@@ -5,7 +5,7 @@
     <groupId>lat.sofis.biobpm</groupId>
     <artifactId>camunda-database-settings</artifactId>
     <relativePath>../../database</relativePath>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
 
   <artifactId>camunda-test-utils-testcontainers</artifactId>
@@ -17,6 +17,7 @@
 
   <properties>
     <version.slf4j>1.7.26</version.slf4j>
+    <maven.deploy.skip>true</maven.deploy.skip>
   </properties>
 
   <dependencyManagement>

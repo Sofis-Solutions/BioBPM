@@ -6,7 +6,7 @@
     <groupId>lat.sofis.biobpm</groupId>
     <artifactId>biobpm-run-root</artifactId>
     <relativePath>../pom.xml</relativePath>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
 
   <artifactId>biobpm-run</artifactId>

@@ -5,7 +5,7 @@
     <groupId>lat.sofis.biobpm</groupId>
     <artifactId>camunda-database-settings</artifactId>
     <relativePath>../../database</relativePath>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
 
   <groupId>lat.sofis.biobpm.distro</groupId>
@@ -20,6 +20,7 @@
   <properties>
     <!-- exclude tests by default, only run in check-sql profile -->
     <skipTests>true</skipTests>
+    <maven.deploy.skip>true</maven.deploy.skip>
   </properties>
 
   <dependencyManagement>

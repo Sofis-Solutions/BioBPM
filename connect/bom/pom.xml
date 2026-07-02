@@ -6,13 +6,13 @@
   <parent>
     <groupId>lat.sofis.biobpm</groupId>
     <artifactId>biobpm-root</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
   <groupId>org.camunda.connect</groupId>
   <artifactId>camunda-connect-bom</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>BioBPM - connect - bom</name>
   <packaging>pom</packaging>
 
