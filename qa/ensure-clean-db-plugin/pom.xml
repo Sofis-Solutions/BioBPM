@@ -9,13 +9,13 @@
   
   <parent>
     <artifactId>camunda-qa</artifactId>
-    <groupId>com.sofis.biobpm.qa</groupId>
+    <groupId>lat.sofis.biobpm.qa</groupId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <dependencies>
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-engine</artifactId>
       <scope>provided</scope>
     </dependency>

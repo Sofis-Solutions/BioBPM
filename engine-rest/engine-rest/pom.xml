@@ -8,7 +8,7 @@
   </description>
 
   <parent>
-    <groupId>com.sofis.biobpm</groupId>
+    <groupId>lat.sofis.biobpm</groupId>
     <artifactId>camunda-engine-rest-root</artifactId>
     <relativePath>../</relativePath>
     <version>1.0.0-SNAPSHOT</version>
@@ -75,7 +75,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-engine</artifactId>
       <scope>provided</scope>
       <exclusions>
@@ -110,7 +110,7 @@
       BOMs must be installed before this module is built
     -->
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-bom</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -118,7 +118,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-core-internal-dependencies</artifactId>
       <version>${project.version}</version>
       <type>pom</type>

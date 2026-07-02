@@ -1,4 +1,4 @@
-package com.sofis.biobpm.run.property;
+package lat.sofis.biobpm.run.property;
 
 import java.util.List;
 

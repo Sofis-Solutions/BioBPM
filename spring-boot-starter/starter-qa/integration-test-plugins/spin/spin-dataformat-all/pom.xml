@@ -7,7 +7,7 @@
   </description>
 
   <parent>
-    <groupId>com.sofis.biobpm.springboot.project</groupId>
+    <groupId>lat.sofis.biobpm.springboot.project</groupId>
     <artifactId>qa-plugins-spin</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
@@ -18,7 +18,7 @@
   <dependencies>
 
     <dependency>
-      <groupId>com.sofis.biobpm.springboot.project</groupId>
+      <groupId>lat.sofis.biobpm.springboot.project</groupId>
       <artifactId>qa-plugins-spin-dataformat-json-jackson</artifactId>
       <version>${project.version}</version>
       <exclusions>

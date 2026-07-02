@@ -9,7 +9,7 @@
   <name>BioBPM - QA - Assert</name>
   
   <parent>
-    <groupId>com.sofis.biobpm</groupId>
+    <groupId>lat.sofis.biobpm</groupId>
     <artifactId>camunda-bpm-assert-root</artifactId>
     <relativePath>../</relativePath>
     <version>1.0.0-SNAPSHOT</version>
@@ -34,18 +34,18 @@
     </dependency>
     <!-- managed by camunda internal dependencies -->
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-engine</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-bpm-junit5</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-bpm-assert</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>

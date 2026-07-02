@@ -5,13 +5,13 @@
   </description>
 
   <parent>
-    <groupId>com.sofis.biobpm.springboot.project</groupId>
+    <groupId>lat.sofis.biobpm.springboot.project</groupId>
     <artifactId>camunda-bpm-spring-boot-starter-root</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
-  <groupId>com.sofis.biobpm</groupId>
+  <groupId>lat.sofis.biobpm</groupId>
   <artifactId>camunda-external-task-client-spring</artifactId>
   <name>BioBPM - Spring Boot Starter - Client - Spring</name>
 
@@ -23,7 +23,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-external-task-client</artifactId>
       <version>${project.version}</version>
     </dependency>

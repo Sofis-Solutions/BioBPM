@@ -9,7 +9,7 @@
     <name>BioBPM - ArchUnit</name>
 
     <parent>
-        <groupId>com.sofis.biobpm</groupId>
+        <groupId>lat.sofis.biobpm</groupId>
         <artifactId>camunda-database-settings</artifactId>
         <relativePath>../../database</relativePath>
         <version>1.0.0-SNAPSHOT</version>

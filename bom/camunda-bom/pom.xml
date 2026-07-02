@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.sofis.biobpm</groupId>
+    <groupId>lat.sofis.biobpm</groupId>
     <artifactId>camunda-bom-root</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <relativePath>../</relativePath>
@@ -50,7 +50,7 @@
       </dependency>
       <!-- BioBPM public artifacts -->
       <dependency>
-        <groupId>com.sofis.biobpm</groupId>
+        <groupId>lat.sofis.biobpm</groupId>
         <artifactId>camunda-only-bom</artifactId>
         <version>${project.version}</version>
         <scope>import</scope>

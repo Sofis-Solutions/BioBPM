@@ -2,7 +2,7 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.sofis.biobpm.model</groupId>
+  <groupId>lat.sofis.biobpm.model</groupId>
   <artifactId>camunda-model-apis</artifactId>
 
   <name>camunda Model APIs</name>
@@ -12,7 +12,7 @@
   </description>
 
   <parent>
-    <groupId>com.sofis.biobpm</groupId>
+    <groupId>lat.sofis.biobpm</groupId>
     <artifactId>camunda-database-settings</artifactId>
     <relativePath>../database</relativePath>
     <version>1.0.0-SNAPSHOT</version>
@@ -21,7 +21,7 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.sofis.biobpm</groupId>
+        <groupId>lat.sofis.biobpm</groupId>
         <artifactId>camunda-core-internal-dependencies</artifactId>
         <version>${project.version}</version>
         <scope>import</scope>

@@ -9,7 +9,7 @@
   <name>BioBPM - QA Integration Tests - Engine - Jakarta</name>
 
   <parent>
-    <groupId>com.sofis.biobpm.qa</groupId>
+    <groupId>lat.sofis.biobpm.qa</groupId>
     <artifactId>camunda-qa</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
@@ -152,26 +152,26 @@
     <!-- CDI engine & Client -->
 
     <dependency>
-      <groupId>com.sofis.biobpm.javaee</groupId>
+      <groupId>lat.sofis.biobpm.javaee</groupId>
       <artifactId>camunda-ejb-client-jakarta</artifactId>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-engine-cdi-jakarta</artifactId>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
           <artifactId>camunda-engine</artifactId>
-          <groupId>com.sofis.biobpm</groupId>
+          <groupId>lat.sofis.biobpm</groupId>
         </exclusion>
       </exclusions>
     </dependency>
 
     <!-- camunda -->
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-engine</artifactId>
       <scope>provided</scope>
       <exclusions>
@@ -183,7 +183,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm.dmn</groupId>
+      <groupId>lat.sofis.biobpm.dmn</groupId>
       <artifactId>camunda-engine-dmn</artifactId>
       <scope>provided</scope>
       <exclusions>
@@ -203,14 +203,14 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-engine-spring-6</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
           <artifactId>camunda-engine</artifactId>
-          <groupId>com.sofis.biobpm</groupId>
+          <groupId>lat.sofis.biobpm</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -235,7 +235,7 @@
       BOM must be installed before this module is built
     -->
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-bom</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -243,7 +243,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-core-internal-dependencies</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -582,7 +582,7 @@
       <dependencyManagement>
         <dependencies>
           <dependency>
-            <groupId>com.sofis.biobpm</groupId>
+            <groupId>lat.sofis.biobpm</groupId>
             <artifactId>camunda-core-internal-dependencies</artifactId>
             <version>${project.version}</version>
             <scope>import</scope>
@@ -594,7 +594,7 @@
       <dependencies>
         <dependency>
           <!-- make sure this comes after runtime in the reactor build -->
-          <groupId>com.sofis.biobpm.qa</groupId>
+          <groupId>lat.sofis.biobpm.qa</groupId>
           <artifactId>camunda-qa-tomcat-runtime</artifactId>
           <version>${project.version}</version>
           <scope>provided</scope>
@@ -718,7 +718,7 @@
       <dependencies>
         <dependency>
           <!-- make sure this comes after runtime in the reactor build -->
-          <groupId>com.sofis.biobpm.qa</groupId>
+          <groupId>lat.sofis.biobpm.qa</groupId>
           <artifactId>camunda-qa-wildfly-runtime</artifactId>
           <version>${project.version}</version>
           <scope>provided</scope>
@@ -808,7 +808,7 @@
       <dependencies>
         <dependency>
           <!-- make sure this comes after runtime in the reactor build -->
-          <groupId>com.sofis.biobpm.qa</groupId>
+          <groupId>lat.sofis.biobpm.qa</groupId>
           <artifactId>camunda-qa-wildfly-runtime</artifactId>
           <version>${project.version}</version>
           <scope>provided</scope>
@@ -1014,7 +1014,7 @@
       <id>clean-db</id>
       <dependencies>
         <dependency>
-          <groupId>com.sofis.biobpm</groupId>
+          <groupId>lat.sofis.biobpm</groupId>
           <artifactId>camunda-engine</artifactId>
           <scope>test</scope>
         </dependency>
@@ -1034,7 +1034,7 @@
                 <configuration>
                   <artifactItems>
                     <artifactItem>
-                      <groupId>com.sofis.biobpm</groupId>
+                      <groupId>lat.sofis.biobpm</groupId>
                       <artifactId>camunda-engine</artifactId>
                       <outputDirectory>${project.build.directory}/sql-scripts/engine</outputDirectory>
                       <overWrite>true</overWrite>

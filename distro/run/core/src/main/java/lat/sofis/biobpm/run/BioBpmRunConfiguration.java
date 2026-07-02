@@ -1,6 +1,6 @@
-package com.sofis.biobpm.run;
+package lat.sofis.biobpm.run;
 
-import com.sofis.biobpm.run.property.BioBpmRunProperties;
+import lat.sofis.biobpm.run.property.BioBpmRunProperties;
 import org.camunda.connect.plugin.impl.ConnectProcessEnginePlugin;
 import org.camunda.spin.plugin.impl.SpinProcessEnginePlugin;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

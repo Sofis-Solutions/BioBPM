@@ -9,7 +9,7 @@
   <artifactId>camunda-engine</artifactId>
 
   <parent>
-    <groupId>com.sofis.biobpm</groupId>
+    <groupId>lat.sofis.biobpm</groupId>
     <artifactId>camunda-database-settings</artifactId>
     <relativePath>../database</relativePath>
     <version>1.0.0-SNAPSHOT</version>
@@ -19,7 +19,7 @@
     <dependencies>
 
       <dependency>
-        <groupId>com.sofis.biobpm</groupId>
+        <groupId>lat.sofis.biobpm</groupId>
         <artifactId>camunda-core-internal-dependencies</artifactId>
         <version>${project.version}</version>
         <scope>import</scope>
@@ -50,22 +50,22 @@
     <!-- camunda dependencies -->
 
     <dependency>
-      <groupId>com.sofis.biobpm.model</groupId>
+      <groupId>lat.sofis.biobpm.model</groupId>
       <artifactId>camunda-bpmn-model</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm.model</groupId>
+      <groupId>lat.sofis.biobpm.model</groupId>
       <artifactId>camunda-cmmn-model</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm.juel</groupId>
+      <groupId>lat.sofis.biobpm.juel</groupId>
       <artifactId>camunda-juel</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm.dmn</groupId>
+      <groupId>lat.sofis.biobpm.dmn</groupId>
       <artifactId>camunda-engine-dmn</artifactId>
       <exclusions>
         <!-- these exclusions are needed when building with Maven >= 3.3
@@ -257,7 +257,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-test-utils-testcontainers</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
@@ -337,7 +337,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-bpm-archunit</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
@@ -443,7 +443,7 @@
             <exclude>%regex[.*(${test.excludes}).*Test.*.class]</exclude>
           </excludes>
           <dependenciesToScan>
-            <dependency>com.sofis.biobpm:camunda-bpm-archunit</dependency>
+            <dependency>lat.sofis.biobpm:camunda-bpm-archunit</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -487,9 +487,9 @@
           <keepDependenciesWithProvidedScope>true</keepDependenciesWithProvidedScope>
           <artifactSet>
             <excludes>
-              <exclude>com.sofis.biobpm.model:*</exclude>
-              <exclude>com.sofis.biobpm.dmn:*</exclude>
-              <exclude>com.sofis.biobpm.juel:*</exclude>
+              <exclude>lat.sofis.biobpm.model:*</exclude>
+              <exclude>lat.sofis.biobpm.dmn:*</exclude>
+              <exclude>lat.sofis.biobpm.juel:*</exclude>
               <exclude>org.camunda.commons:*</exclude>
               <exclude>org.camunda.feel:*</exclude>
 
@@ -766,7 +766,7 @@
       <id>check-plugins</id>
       <dependencies>
         <dependency>
-          <groupId>com.sofis.biobpm</groupId>
+          <groupId>lat.sofis.biobpm</groupId>
           <artifactId>camunda-engine-plugin-spin</artifactId>
         </dependency>
         <dependency>
@@ -774,7 +774,7 @@
           <artifactId>camunda-spin-dataformat-all</artifactId>
         </dependency>
         <dependency>
-          <groupId>com.sofis.biobpm</groupId>
+          <groupId>lat.sofis.biobpm</groupId>
           <artifactId>camunda-engine-plugin-connect</artifactId>
         </dependency>
         <dependency>

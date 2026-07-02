@@ -8,7 +8,7 @@
   <artifactId>camunda-engine-spring</artifactId>
 
   <parent>
-    <groupId>com.sofis.biobpm</groupId>
+    <groupId>lat.sofis.biobpm</groupId>
     <artifactId>camunda-database-settings</artifactId>
     <relativePath>../../database</relativePath>
     <version>1.0.0-SNAPSHOT</version>
@@ -18,7 +18,7 @@
     <dependencies>
 
       <dependency>
-        <groupId>com.sofis.biobpm</groupId>
+        <groupId>lat.sofis.biobpm</groupId>
         <artifactId>camunda-core-internal-dependencies</artifactId>
         <version>${project.version}</version>
         <scope>import</scope>
@@ -38,7 +38,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-engine</artifactId>
     </dependency>
     <dependency>
@@ -155,7 +155,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-bpm-archunit</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
@@ -170,7 +170,7 @@
         <configuration>
           <redirectTestOutputToFile>true</redirectTestOutputToFile>
           <dependenciesToScan>
-            <dependency>com.sofis.biobpm:camunda-bpm-archunit</dependency>
+            <dependency>lat.sofis.biobpm:camunda-bpm-archunit</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
@@ -190,7 +190,7 @@
               <forceCreation>true</forceCreation>
               <excludes>
                 <!-- this is re-defined in the consuming artifacts -->
-                <exclude>META-INF/services/com.sofis.biobpm.engine.spring.test.SpringTestHelper</exclude>
+                <exclude>META-INF/services/lat.sofis.biobpm.engine.spring.test.SpringTestHelper</exclude>
               </excludes>
             </configuration>
           </execution>

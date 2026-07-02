@@ -2,13 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.sofis.biobpm</groupId>
+    <groupId>lat.sofis.biobpm</groupId>
     <artifactId>camunda-database-settings</artifactId>
     <relativePath>../../database</relativePath>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.sofis.biobpm.distro</groupId>
+  <groupId>lat.sofis.biobpm.distro</groupId>
   <artifactId>camunda-sql-scripts</artifactId>
   <packaging>jar</packaging>
 
@@ -25,7 +25,7 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.sofis.biobpm</groupId>
+        <groupId>lat.sofis.biobpm</groupId>
         <artifactId>camunda-core-internal-dependencies</artifactId>
         <version>${project.version}</version>
         <scope>import</scope>
@@ -36,7 +36,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-engine</artifactId>
       <scope>provided</scope>
     </dependency>
@@ -148,7 +148,7 @@
             <configuration>
               <artifactItems>
                 <artifactItem>
-                  <groupId>com.sofis.biobpm</groupId>
+                  <groupId>lat.sofis.biobpm</groupId>
                   <artifactId>camunda-engine</artifactId>
                   <version>${project.version}</version>
                   <type>jar</type>
@@ -421,7 +421,7 @@
                 <configuration>
                   <artifactItems>
                     <artifactItem>
-                      <groupId>com.sofis.biobpm.distro</groupId>
+                      <groupId>lat.sofis.biobpm.distro</groupId>
                       <artifactId>camunda-sql-scripts</artifactId>
                       <version>${camunda.version.old}</version>
                       <outputDirectory>${project.build.directory}/test-classes/scripts-old</outputDirectory>

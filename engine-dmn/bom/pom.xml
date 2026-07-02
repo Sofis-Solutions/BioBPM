@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.sofis.biobpm</groupId>
+    <groupId>lat.sofis.biobpm</groupId>
     <artifactId>biobpm-root</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <relativePath>../../</relativePath>
   </parent>
 
-  <groupId>com.sofis.biobpm.dmn</groupId>
+  <groupId>lat.sofis.biobpm.dmn</groupId>
   <artifactId>camunda-engine-dmn-bom</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <name>camunda DMN - engine - bom</name>
@@ -22,32 +22,32 @@
     <dependencies>
 
       <dependency>
-        <groupId>com.sofis.biobpm.dmn</groupId>
+        <groupId>lat.sofis.biobpm.dmn</groupId>
         <artifactId>camunda-engine-dmn</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>com.sofis.biobpm.dmn</groupId>
+        <groupId>lat.sofis.biobpm.dmn</groupId>
         <artifactId>camunda-engine-feel-api</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>com.sofis.biobpm.dmn</groupId>
+        <groupId>lat.sofis.biobpm.dmn</groupId>
         <artifactId>camunda-engine-feel-juel</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>com.sofis.biobpm.dmn</groupId>
+        <groupId>lat.sofis.biobpm.dmn</groupId>
         <artifactId>camunda-engine-feel-scala</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <!-- See CAM-11346
       <dependency>
-        <groupId>com.sofis.biobpm.dmn</groupId>
+        <groupId>lat.sofis.biobpm.dmn</groupId>
         <artifactId>camunda-engine-feel-spin</artifactId>
         <version>${project.version}</version>
       </dependency>

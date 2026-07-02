@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.sofis.biobpm.model</groupId>
+    <groupId>lat.sofis.biobpm.model</groupId>
     <artifactId>camunda-model-apis</artifactId>
     <relativePath>../</relativePath>
     <version>1.0.0-SNAPSHOT</version>
@@ -26,7 +26,7 @@
   <dependencies>
 
     <dependency>
-      <groupId>com.sofis.biobpm.model</groupId>
+      <groupId>lat.sofis.biobpm.model</groupId>
       <artifactId>camunda-xml-model</artifactId>
     </dependency>
 
@@ -49,7 +49,7 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sofis.biobpm</groupId>
+      <groupId>lat.sofis.biobpm</groupId>
       <artifactId>camunda-bpm-archunit</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
@@ -82,7 +82,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <dependenciesToScan>
-            <dependency>com.sofis.biobpm:camunda-bpm-archunit</dependency>
+            <dependency>lat.sofis.biobpm:camunda-bpm-archunit</dependency>
           </dependenciesToScan>
         </configuration>
       </plugin>
